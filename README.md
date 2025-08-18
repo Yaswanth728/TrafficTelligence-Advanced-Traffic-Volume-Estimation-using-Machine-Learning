@@ -1,11 +1,16 @@
 # TrafficTelligence-Advanced-Traffic-Volume-Estimation-using-Machine-Learning
- TrafficTelligence-Advanced-Traffic-Volume-Estimation-using-Machine-Learning
 TrafficTelligence: Advanced Traffic Volume Estimation with Machine Learning
 
-1.Introduction
+
+
+
+1. Introduction
+
 Urban traffic congestion is a critical issue in modern cities, causing delays, increasing pollution, and reducing the quality of life. TrafficTelligence is an intelligent system that leverages machine learning algorithms to predict traffic volume based on historical data and environmental conditions. This predictive capability supports smarter urban planning, adaptive traffic control, and better infrastructure management.
 
-2.Project Objective
+
+
+2. Project Objective
 
 The main aim of the TrafficTelligence project is to:
 
@@ -17,7 +22,11 @@ Build a web application to display predictions interactively.
 
 Enable real-time analysis for use by traffic departments or researchers.
 
-3.Team Details
+
+
+
+
+3. Team Details
 
 Team Leader: P. V. Sai Harshith
 
@@ -25,7 +34,11 @@ Team Member: Paladugu Yaswanth
 
 Team Member: Paladugu Pravallika
 
-4.Dataset Description
+
+
+
+
+4. Dataset Description
 
 The dataset contains traffic volume data along with weather features like:
 
@@ -43,15 +56,36 @@ Weather description
 
 Traffic volume (traffic_volume)
 
+
 Source: [UCI Machine Learning Repository / Kaggle]
 
-Size: ~48,000 records Time Frame: 2012 - 2018 Frequency: Hourly entries
+Size: ~48,000 records
+Time Frame: 2012 - 2018
+Frequency: Hourly entries
 
-5.Project Structure
 
-TrafficTelligence/ ├── dataset/ │ ├── train/ │ └── test/ ├── model/ │ ├── traffic_model.h5 │ └── model_metadata.json ├── app.py ├── templates/ │ └── index.html ├── static/ │ └── style.css ├── README.md └── requirements.txt
 
-6.Technologies Used
+5. Project Structure
+
+TrafficTelligence/
+├── dataset/
+│   ├── train/
+│   └── test/
+├── model/
+│   ├── traffic_model.h5
+│   └── model_metadata.json
+├── app.py
+├── templates/
+│   └── index.html
+├── static/
+│   └── style.css
+├── README.md
+└── requirements.txt
+
+
+
+
+6. Technologies Used
 
 Languages: Python, HTML, CSS
 
@@ -61,7 +95,11 @@ Framework: Flask (for web app)
 
 Tools: Google Colab, VS Code
 
-7.Data Preprocessing
+
+
+
+
+7. Data Preprocessing
 
 Missing Values handled using mean imputation.
 
@@ -71,7 +109,11 @@ Label Encoding for categorical weather features.
 
 Normalization/Scaling for numerical features.
 
-8.Model Development
+
+
+
+
+8. Model Development
 
 Algorithm Used: Deep Neural Network (using Keras)
 
@@ -87,15 +129,25 @@ Root Mean Squared Error (RMSE)
 
 R² Score
 
-9.Results
 
-Metric Value
 
-MSE 4300000+ RMSE ~2073 vehicles R² Score 0.88+ (88%)
+
+
+
+9. Results
+
+Metric	Value
+
+MSE	4300000+
+RMSE	~2073 vehicles
+R² Score	0.88+ (88%)
+
 
 The model performed with high accuracy, successfully learning temporal and environmental patterns affecting traffic.
 
-10.Web Application
+
+
+10. Web Application
 
 A user-friendly Flask web app was developed that allows:
 
@@ -105,7 +157,11 @@ Predicting and displaying estimated traffic volume.
 
 Responsive design using HTML/CSS.
 
-11..Challenges Faced
+
+
+
+
+11. Challenges Faced
 
 Handling missing or inconsistent data.
 
@@ -115,7 +171,11 @@ Ensuring web app and model integration.
 
 Time-series complexity in traffic patterns.
 
-12.Applications
+
+
+
+
+12. Applications
 
 Smart City Planning
 
@@ -125,7 +185,11 @@ Weather-sensitive Traffic Alerts
 
 Urban Mobility Research
 
-13.Future Enhancements
+
+
+
+
+13. Future Enhancements
 
 Include real-time data streaming via APIs.
 
@@ -135,6 +199,9 @@ Extend to multimodal traffic (pedestrian, bikes).
 
 Integration with Google Maps APIs.
 
-14.Conclusion
+
+
+
+14. Conclusion
 
 TrafficTelligence successfully demonstrates how machine learning can enhance urban traffic management. By combining historical data and real-world environmental parameters, it provides accurate traffic forecasts that support smarter, data-driven decisions.
